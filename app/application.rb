@@ -42,6 +42,7 @@ class Application
 
   def handle_add(search_term)
     if @@items.include?(search_term)
+      @@cart << search_term
   end
 
 end
