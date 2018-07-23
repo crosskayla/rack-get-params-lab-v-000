@@ -43,9 +43,9 @@ class Application
   def handle_add(search_term)
     if @@items.include?(search_term)
       @@cart << search_term
-      resp.write "Added #{search_term}"
+      return "Added #{search_term}"
     else
-      resp.write "We don't have that item"
+      return "We don't have that item"
     end
   end
 
